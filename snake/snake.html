@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One Piece Games</title>
+	<link rel="stylesheet" type="text/css" href="../css/final.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1 style="border: 10px black ; border-right: 10px black;">One Piece Games</h1>
+	<div>
+		<nav>
+			<ul>
+                <li><a href="../final.html"><img src="../media/op-back.png" width="100" height="37"></a></li>
+				<li><a href="../battle/battle.html">Luffy's Battle</a></li>
+				<li><a href="../puzzle/puzzle.html">Complete The Puzzle</a></li>
+				<li><a href="../snake/snake.html">Snake Game</a></li>
+				<li ><a href="#" id="inst">Instructions</a></li>
+			</ul>
+		</nav>
+	</div>
+    <div >
+        <h2>Snake Game</h2>
+		<div class="game-container" >
+			<canvas id="snakeCanvas" width="400" height="400"></canvas>
+		</div>
+    </div>
+	<div id="inst-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p id="instructions">
+				Press an arrow key to start the game.<br>
+				Use the arrows on your keyboard to <br>
+				move the snake. Eat the red apples to <br>
+				grow the snake as long as you can <br>
+				without running into your own tail.
+			</p>
+		</div>
+	</div>
+	<script src="js/snake.js"></script>
+	<script src="../js/instructions.js"></script>
+	<script src="../js/final.js"></script>
+</body>
+</html>

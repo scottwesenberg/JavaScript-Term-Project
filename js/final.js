@@ -58,4 +58,3 @@ document.getElementById("storyButton").addEventListener("click",function(){
   };
   xreq.send();
 });
-
