@@ -11,36 +11,43 @@ html{
     src: url(../fonts/antique-quest-st/Antique\ Quest\ St.ttf);
 }
   
-
 body{
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
 }
+
+/* Contents of Pages */
 h1{
     font-family: OnePiece;
+    width: 50%;
+    margin-left: 23.5%;
     font-size: 3em;
     font-weight: 900;
-    padding: 15px;
+    padding: 15px ;
+    background-color: aliceblue;
+    padding: 10px;
     border-radius: 25px;
     margin-right: 0px;
     text-align: center;
-    opacity: .8;
+    opacity: .95;
 }
 h2{
     font-family: OnePiece;
     text-align: center;
     font-size: 1.6em;
+    opacity: .9;
     font-weight: 900;
     background-color: rgb(194, 33, 73);
     padding: 15px;
     border-radius: 25px;
     margin-right: 17px;
+    margin: 10px auto;
     border-bottom: 4px black;
     border-right: 4px black;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;    
+    background-color: rgb(194, 33, 73);
+
 }
 h3{
     font-size: .8em;
@@ -79,11 +86,6 @@ nav {
     margin-right: 17px;
     border-radius: 15px;
 }
-/*#instructions{
-    display:block;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}*/
 
 nav ul {
     margin: 0;
@@ -107,10 +109,58 @@ nav a:hover {
     height: 1.5em;
 }
 nav img{
-height: 1.2em;
-width: 4.3em;
+    height: 1.2em;
+    width: 4.3em;
+    padding: 0;
+}
+
+/* Classes & ids */
+#pausePlay button{
+    background-color: rgb(255, 255, 255);
+}
+#pausePlay button:hover{
+    background-color: rgb(178, 178, 178);
+}
+#dodge {
+    margin-top: 10px;
+}
+.lives{
+    background-color: rgb(194, 33, 73);
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.battle{
+    background-color: #777777;
+    opacity: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px 0px 15px 0px;
+    width: 50%;
+}
+.battle:hover{
+    border: 2px solid black;
+
+}
+.flex.image-container div {
+    width: fit-content;
+    text-align: center;
+}
+
+.flex.image-container img {
+    display: block;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
 }
 .game-container{
+    background-color: rgb(194, 33, 73);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    opacity: .95;
+}
+.game-container, .gif-container{
 
     display:flex;
     justify-content: center;
@@ -118,22 +168,24 @@ width: 4.3em;
 
 }
 .modal {
+    margin-left: 26%;
+    margin-top: 10%;
     display: none; 
     position: fixed; 
     z-index: 1; /* Sit on top of content */
     padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; 
+    width:50%; 
     height: 100%; 
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
 }
 
 .modal-content {
+    
     background-color: #fff;
     margin: auto;
+    text-align: center;
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
@@ -158,10 +210,9 @@ width: 4.3em;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(194, 33, 73);
-    opacity: .8;
     margin-right: 17px;
     border-radius: 20px;
-
+    opacity: .9;
 }
 
 .flex > div {
@@ -179,6 +230,11 @@ width: 4.3em;
     width: auto;
     filter: blur(5px);
 }
+
+
+/* CSS For different size screens */
+
+
 @media only screen and (max-width: 500px) {
 
 body {
@@ -194,6 +250,7 @@ nav ul li{
     
 }
 }
+
 @media only screen and (min-width: 501px) and (max-width: 767px) {
 body {
     max-width: 767px;
